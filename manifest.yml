@@ -1,0 +1,20 @@
+applications:
+- name: znc
+  buildpack: https://github.com/ryandotsmith/null-buildpack.git
+  services:
+    ${name}-data:
+      type: filesystem
+    ${name}-port:
+      type: harbor
+  stackato:
+    hooks:
+      pre-staging:
+      - git submodule update --init
+      - cd src && ./autogen.sh
+      - ./configure --prefix=/app
+      - make
+      - make install
+      pre-running:
+      - ruby announce_ext_harbor_port.rb
+    ignores:
+      - src/.git
