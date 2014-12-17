@@ -15,6 +15,6 @@ applications:
       - make
       - make install
       pre-running:
-      - ruby announce_ext_harbor_port.rb
+      - ruby show_information.rb
     ignores:
       - src/.git

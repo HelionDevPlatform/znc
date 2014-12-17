@@ -11,4 +11,4 @@ After deploying, login using the following credentials:
     user: admin
     pass: stackato
 
-Connect to the ZNC bouncer using the port specified in the deployment logs.
+Connect to the ZNC bouncer using the address specified in the deployment logs.
