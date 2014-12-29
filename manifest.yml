@@ -17,4 +17,4 @@ applications:
       pre-running:
       - ruby show_information.rb
     ignores:
-      - src/.git
+    - src/.git
