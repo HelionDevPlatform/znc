@@ -13,7 +13,11 @@ After deploying, login using the following credentials:
 
 Access the web interface and create a network to connect to under `Your Settings` - `Networks`
 
-Connect to the ZNC bouncer using the address specified in the deployment logs and for the server password pass in: 
+Connect to the ZNC bouncer using the address specified in the deployment logs. To manually bring up the connection details run:
+
+    stackato run ruby show_information.rb
+
+If you created a network via the web interface pass in the following as the server password when connecting using a IRC client:
 
     $username/$network_name:$password
     
