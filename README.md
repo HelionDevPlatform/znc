@@ -1,8 +1,8 @@
-ZNC - An advanced IRC bouncer on Stackato
-=========================================
+ZNC - An advanced IRC bouncer on HPE Helion Stackato
+====================================================
 For more information on ZNC refer to their [Github repository](https://github.com/znc/znc).
 
-To deploy to Stackato:
+To deploy to HPE Helion Stackato:
 
     stackato push -n
 
