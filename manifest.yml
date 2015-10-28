@@ -1,7 +1,7 @@
 applications:
 - name: znc
   buildpack: https://github.com/ryandotsmith/null-buildpack.git
-  mem: 32M
+  memory: 32M
   services:
     ${name}-data:
       type: filesystem
